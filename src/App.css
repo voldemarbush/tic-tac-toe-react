@@ -1,0 +1,41 @@
+.game__main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game__button {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 10px;
+  top: 10px;
+}
+
+.game__button:last-child {
+  left: calc(100% - 110px);
+}
+
+.cross {
+  -webkit-mask-image: url('/src/assets/cross.svg');
+}
+.circle {
+  -webkit-mask-image: url('/src/assets/zero.svg');
+}
+.tie {
+  -webkit-mask-image: url('/src/assets/tie.svg');
+}
+.white-color {
+  background-color: #ffebcd;
+}
+.red-color {
+  background-color: #ff4800;
+}
+.blue-color {
+  background-color: #00a0e3;
+}
+.yellow-color {
+  background-color: #f8cc07;
+}

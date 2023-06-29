@@ -1,0 +1,41 @@
+.game__grid-h {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35vw;
+  height: 35vw;
+  z-index: -1;
+}
+
+.game__grid-h span {
+  width: 100%;
+  height: 0.5%;
+  margin-bottom: 32%;
+  background-color: bisque;
+}
+
+.game__grid-h span:last-child {
+  margin-bottom: 0;
+}
+
+.game__grid-v {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 35vw;
+  height: 35vw;
+  z-index: -1;
+}
+
+.game__grid-v span {
+  width: 0.5%;
+  height: 100%;
+  margin-right: 32%;
+  background-color: bisque;
+}
+
+.game__grid-v span:last-child {
+  margin-right: 0;
+}
