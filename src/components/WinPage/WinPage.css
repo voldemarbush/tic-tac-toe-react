@@ -28,6 +28,7 @@
 .game__winPage-info h2 {
   color: var(--color-main);
   font-size: 5vw;
+  padding-bottom: 1rem;
 }
 
 .game__winPage-info h3 {
@@ -36,6 +37,7 @@
 }
 
 .game__winPage-info p {
+  margin: 0;
   font-family: sans-serif;
   font-weight: 600;
   color: var(--color-main);
@@ -75,4 +77,48 @@
 
 .game__winPage-player.hide {
   opacity: 0;
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .game__winPage {
+    width: 80vw;
+    height: 90vw;
+    margin-top: calc(50vh - 40vw);
+  }
+
+  .game__winPage-info h2 {
+    font-size: 9vw;
+  }
+
+  .game__winPage-info h3 {
+    font-size: 6vw;
+  }
+
+  .game__winPage-player {
+    width: 15vw;
+    height: 15vw;
+    mask-size: 100%;
+    -webkit-mask-size: 100%;
+  }
+
+  .game__winPage-info p {
+    font-size: 4vw;
+  }
+
+  .game__winPage-info button {
+    width: 60%;
+    height: 20%;
+    margin: 1vw;
+    border: 2px solid;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
 }

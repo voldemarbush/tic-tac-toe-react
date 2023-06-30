@@ -11,13 +11,13 @@ const WinPage = ({ winner, move, startNewGame }) => {
     <div className={`game__winPage ${winner ? 'show' : 'hide'}`}>
       <div className="game__winPage-info">
         <h2>Game Over</h2>
-        <h3>{`${winner === 'tie' ? 'tie game' : 'winner'}`}</h3>
+        <h3>{`${winner === 'tie' ? 'tie game' : 'winner:'}`}</h3>
         <div
           className={`game__winPage-player ${
             winner ? classList[winner] : 'hide'
           }`}
         ></div>
-        <p>move: {move}</p>
+        <p>moves: {move}</p>
         <button onClick={startNewGame}>Start New Game</button>
       </div>
     </div>

@@ -12,3 +12,27 @@
 .game__desk.show {
   scale: 1;
 }
+
+@media screen and (max-width: 1440px) {
+  .game__desk {
+    transform: scale(140%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .game__desk {
+    transform: scale(180%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .game__desk {
+    transform: scale(230%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .game__desk {
+    transform: scale(270%);
+  }
+}
