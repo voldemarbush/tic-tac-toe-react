@@ -1,5 +1,4 @@
 .game__cell {
-  display: flex;
   width: 10vw;
   height: 10vw;
   border: 0;
@@ -26,46 +25,6 @@
   cursor: auto;
 }
 
-@keyframes point {
-  0% {
-    mask-size: 20%;
-    -webkit-mask-size: 20%;
-  }
-  50% {
-    mask-size: 25%;
-    -webkit-mask-size: 25%;
-  }
-  100% {
-    mask-size: 20%;
-    -webkit-mask-size: 20%;
-  }
-}
-
-@keyframes show {
-  0% {
-    mask-size: 20%;
-    -webkit-mask-size: 20%;
-  }
-  100% {
-    mask-size: 70%;
-    -webkit-mask-size: 70%;
-  }
-}
-
-@keyframes shines {
-  0% {
-    background-color: #ffebcd;
-    mask-size: 60%;
-    -webkit-mask-size: 60%;
-  }
-  50% {
-    background-color: #f8cc07;
-    mask-size: 50%;
-    -webkit-mask-size: 50%;
-  }
-  100% {
-    background-color: #ffebcd;
-    mask-size: 60%;
-    -webkit-mask-size: 60%;
-  }
+.game__cell.shine {
+  animation: shines 1s infinite;
 }

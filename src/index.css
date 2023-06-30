@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  background-color: #008000;
+
+:root {
+  --color-main: #ffe4c4;
+  --color-bg: #008000;
+  --color-green-dark: #418941;
+  --color-red: #ff4800;
+  --color-blue: #00a0e3;
+  --color-yellow: #f8cc07;
 }

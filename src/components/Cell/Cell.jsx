@@ -1,27 +1,20 @@
-import PropTypes from 'prop-types';
-
 import './Cell.css';
 
 const classList = {
   empty: 'white-color',
-  cross: 'cross no-hover blue-color mask',
-  circle: 'circle no-hover red-color mask',
+  cross: 'cross blue-color mask',
+  circle: 'circle red-color mask',
 };
 
-const Cell = ({ figure, onClick }) => {
+const Cell = ({ figure, onClick, player, effect }) => {
   return (
     <div
       onClick={onClick}
       className={`game__cell ${
-        classList[figure] + (figure === 'empty' ? ' cross' : '')
+        classList[figure] + ' ' + (figure === 'empty' ? player : '') + effect
       } `}
     />
   );
-};
-
-Cell.propTypes = {
-  figure: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
 };
 
 export default Cell;

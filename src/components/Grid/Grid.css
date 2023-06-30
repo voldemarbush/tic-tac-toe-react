@@ -12,7 +12,7 @@
   width: 100%;
   height: 0.5%;
   margin-bottom: 32%;
-  background-color: bisque;
+  background-color: var(--color-main);
 }
 
 .game__grid-h span:last-child {
@@ -33,7 +33,7 @@
   width: 0.5%;
   height: 100%;
   margin-right: 32%;
-  background-color: bisque;
+  background-color: var(--color-main);
 }
 
 .game__grid-v span:last-child {
